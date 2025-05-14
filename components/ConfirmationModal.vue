@@ -83,8 +83,6 @@ const close = () => {
 const submitData = async () => {
   try {
     currentState.value = 'loading';
-
-    // Закоментований код реального API запиту
   /*
     const response = await fetch('https://umsystem-documents.azurewebsites.net/routes', {
       method: 'POST',
@@ -100,8 +98,6 @@ const submitData = async () => {
 
     const data = await response.json();
 
-
-    //імітуємо затримку і завжди повертаємо успіх
     */
     console.log('Відправлені дані (заглушка):', props.routeData);
     await new Promise(resolve => setTimeout(resolve, 1500));
